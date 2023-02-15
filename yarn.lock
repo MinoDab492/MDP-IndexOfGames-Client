@@ -79,20 +79,20 @@
     username "^5.1.0"
     yarn-or-npm "^3.0.1"
 
-"@electron-forge/maker-base@^6.0.4":
-  version "6.0.4"
-  resolved "https://registry.npmjs.org/@electron-forge/maker-base/-/maker-base-6.0.4.tgz"
+"@electron-forge/maker-base@6.0.5", "@electron-forge/maker-base@^6.0.4":
+  version "6.0.5"
+  resolved "https://registry.yarnpkg.com/@electron-forge/maker-base/-/maker-base-6.0.5.tgz#09dc0f458ca1d15ce93be9210ea44e01dca911cb"
   dependencies:
-    "@electron-forge/shared-types" "^6.0.4"
+    "@electron-forge/shared-types" "6.0.5"
     fs-extra "^10.0.0"
     which "^2.0.2"
 
-"@electron-forge/maker-deb@^6.0.4":
-  version "6.0.4"
-  resolved "https://registry.npmjs.org/@electron-forge/maker-deb/-/maker-deb-6.0.4.tgz"
+"@electron-forge/maker-deb@^6.0.5":
+  version "6.0.5"
+  resolved "https://registry.yarnpkg.com/@electron-forge/maker-deb/-/maker-deb-6.0.5.tgz#62ac16c94172dfbc3b49194624a8c2ef2c855213"
   dependencies:
-    "@electron-forge/maker-base" "^6.0.4"
-    "@electron-forge/shared-types" "^6.0.4"
+    "@electron-forge/maker-base" "6.0.5"
+    "@electron-forge/shared-types" "6.0.5"
   optionalDependencies:
     electron-installer-debian "^3.0.0"
 
@@ -150,9 +150,9 @@
     fs-extra "^10.0.0"
     mime-types "^2.1.25"
 
-"@electron-forge/shared-types@^6.0.4":
-  version "6.0.4"
-  resolved "https://registry.npmjs.org/@electron-forge/shared-types/-/shared-types-6.0.4.tgz"
+"@electron-forge/shared-types@6.0.5", "@electron-forge/shared-types@^6.0.4":
+  version "6.0.5"
+  resolved "https://registry.yarnpkg.com/@electron-forge/shared-types/-/shared-types-6.0.5.tgz#8b265687fad188799384f88fba821f8f0eac689e"
   dependencies:
     "@electron/rebuild" "^3.2.10"
     electron-packager "^17.1.1"
