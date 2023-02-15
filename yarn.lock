@@ -13,12 +13,12 @@
     ajv "^6.12.0"
     ajv-keywords "^3.4.1"
 
-"@electron-forge/cli@^6.0.4":
-  version "6.0.4"
-  resolved "https://registry.npmjs.org/@electron-forge/cli/-/cli-6.0.4.tgz"
+"@electron-forge/cli@^6.0.5":
+  version "6.0.5"
+  resolved "https://registry.yarnpkg.com/@electron-forge/cli/-/cli-6.0.5.tgz#b34b3e6a1a58ef62860b565c76af9e06f0d4fba6"
   dependencies:
-    "@electron-forge/core" "^6.0.4"
-    "@electron-forge/shared-types" "^6.0.4"
+    "@electron-forge/core" "6.0.5"
+    "@electron-forge/shared-types" "6.0.5"
     "@electron/get" "^2.0.0"
     chalk "^4.0.0"
     commander "^4.1.1"
@@ -27,11 +27,11 @@
     listr2 "^5.0.3"
     semver "^7.2.1"
 
-"@electron-forge/core-utils@^6.0.4":
-  version "6.0.4"
-  resolved "https://registry.npmjs.org/@electron-forge/core-utils/-/core-utils-6.0.4.tgz"
+"@electron-forge/core-utils@6.0.5":
+  version "6.0.5"
+  resolved "https://registry.yarnpkg.com/@electron-forge/core-utils/-/core-utils-6.0.5.tgz#a14eb4993093c7be98e5f07f55135b5fd3b0a48e"
   dependencies:
-    "@electron-forge/shared-types" "^6.0.4"
+    "@electron-forge/shared-types" "6.0.5"
     "@electron/rebuild" "^3.2.10"
     "@malept/cross-spawn-promise" "^2.0.0"
     chalk "^4.0.0"
@@ -42,18 +42,18 @@
     semver "^7.2.1"
     yarn-or-npm "^3.0.1"
 
-"@electron-forge/core@^6.0.4":
-  version "6.0.4"
-  resolved "https://registry.npmjs.org/@electron-forge/core/-/core-6.0.4.tgz"
+"@electron-forge/core@6.0.5":
+  version "6.0.5"
+  resolved "https://registry.yarnpkg.com/@electron-forge/core/-/core-6.0.5.tgz#38e8ee4e1f5bbf22934b02b3d202e19dcb2b055f"
   dependencies:
-    "@electron-forge/core-utils" "^6.0.4"
-    "@electron-forge/maker-base" "^6.0.4"
-    "@electron-forge/plugin-base" "^6.0.4"
-    "@electron-forge/publisher-base" "^6.0.4"
-    "@electron-forge/shared-types" "^6.0.4"
-    "@electron-forge/template-base" "^6.0.4"
-    "@electron-forge/template-webpack" "^6.0.4"
-    "@electron-forge/template-webpack-typescript" "^6.0.4"
+    "@electron-forge/core-utils" "6.0.5"
+    "@electron-forge/maker-base" "6.0.5"
+    "@electron-forge/plugin-base" "6.0.5"
+    "@electron-forge/publisher-base" "6.0.5"
+    "@electron-forge/shared-types" "6.0.5"
+    "@electron-forge/template-base" "6.0.5"
+    "@electron-forge/template-webpack" "6.0.5"
+    "@electron-forge/template-webpack-typescript" "6.0.5"
     "@electron/get" "^2.0.0"
     "@electron/rebuild" "^3.2.10"
     "@malept/cross-spawn-promise" "^2.0.0"
@@ -124,11 +124,17 @@
     cross-zip "^4.0.0"
     fs-extra "^10.0.0"
 
-"@electron-forge/plugin-base@^6.0.4":
-  version "6.0.4"
-  resolved "https://registry.npmjs.org/@electron-forge/plugin-base/-/plugin-base-6.0.4.tgz"
+"@electron-forge/plugin-base@6.0.5":
+  version "6.0.5"
+  resolved "https://registry.yarnpkg.com/@electron-forge/plugin-base/-/plugin-base-6.0.5.tgz#8a73d19d6ae81640f858d351ac701462fe6c72a8"
   dependencies:
-    "@electron-forge/shared-types" "^6.0.4"
+    "@electron-forge/shared-types" "6.0.5"
+
+"@electron-forge/publisher-base@6.0.5":
+  version "6.0.5"
+  resolved "https://registry.yarnpkg.com/@electron-forge/publisher-base/-/publisher-base-6.0.5.tgz#b857a8ac2022d13ed4ab0ef93466fe5d22be9513"
+  dependencies:
+    "@electron-forge/shared-types" "6.0.5"
 
 "@electron-forge/publisher-base@^6.0.4":
   version "6.0.4"
@@ -158,30 +164,30 @@
     electron-packager "^17.1.1"
     listr2 "^5.0.3"
 
-"@electron-forge/template-base@^6.0.4":
-  version "6.0.4"
-  resolved "https://registry.npmjs.org/@electron-forge/template-base/-/template-base-6.0.4.tgz"
+"@electron-forge/template-base@6.0.5":
+  version "6.0.5"
+  resolved "https://registry.yarnpkg.com/@electron-forge/template-base/-/template-base-6.0.5.tgz#cd4cf11b7d15adc30a7fccb2ec198c1fe88c4d82"
   dependencies:
-    "@electron-forge/shared-types" "^6.0.4"
+    "@electron-forge/shared-types" "6.0.5"
     "@malept/cross-spawn-promise" "^2.0.0"
     debug "^4.3.1"
     fs-extra "^10.0.0"
     username "^5.1.0"
 
-"@electron-forge/template-webpack-typescript@^6.0.4":
-  version "6.0.4"
-  resolved "https://registry.npmjs.org/@electron-forge/template-webpack-typescript/-/template-webpack-typescript-6.0.4.tgz"
+"@electron-forge/template-webpack-typescript@6.0.5":
+  version "6.0.5"
+  resolved "https://registry.yarnpkg.com/@electron-forge/template-webpack-typescript/-/template-webpack-typescript-6.0.5.tgz#e933b564930f4782ec5ffde1886135947a669bb5"
   dependencies:
-    "@electron-forge/shared-types" "^6.0.4"
-    "@electron-forge/template-base" "^6.0.4"
+    "@electron-forge/shared-types" "6.0.5"
+    "@electron-forge/template-base" "6.0.5"
     fs-extra "^10.0.0"
 
-"@electron-forge/template-webpack@^6.0.4":
-  version "6.0.4"
-  resolved "https://registry.npmjs.org/@electron-forge/template-webpack/-/template-webpack-6.0.4.tgz"
+"@electron-forge/template-webpack@6.0.5":
+  version "6.0.5"
+  resolved "https://registry.yarnpkg.com/@electron-forge/template-webpack/-/template-webpack-6.0.5.tgz#1d420b6cbdf3533701230d02974ca42c297ab518"
   dependencies:
-    "@electron-forge/shared-types" "^6.0.4"
-    "@electron-forge/template-base" "^6.0.4"
+    "@electron-forge/shared-types" "6.0.5"
+    "@electron-forge/template-base" "6.0.5"
     fs-extra "^10.0.0"
 
 "@electron/asar@^3.2.1":
