@@ -79,11 +79,19 @@
     username "^5.1.0"
     yarn-or-npm "^3.0.1"
 
-"@electron-forge/maker-base@6.0.5", "@electron-forge/maker-base@^6.0.4":
+"@electron-forge/maker-base@6.0.5":
   version "6.0.5"
   resolved "https://registry.yarnpkg.com/@electron-forge/maker-base/-/maker-base-6.0.5.tgz#09dc0f458ca1d15ce93be9210ea44e01dca911cb"
   dependencies:
     "@electron-forge/shared-types" "6.0.5"
+    fs-extra "^10.0.0"
+    which "^2.0.2"
+
+"@electron-forge/maker-base@6.1.1", "@electron-forge/maker-base@^6.0.4":
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/@electron-forge/maker-base/-/maker-base-6.1.1.tgz#2c8fdaaaa28ff39fbf4ff26e664dc79265f96b49"
+  dependencies:
+    "@electron-forge/shared-types" "6.1.1"
     fs-extra "^10.0.0"
     which "^2.0.2"
 
@@ -96,12 +104,12 @@
   optionalDependencies:
     electron-installer-debian "^3.0.0"
 
-"@electron-forge/maker-rpm@^6.0.4":
-  version "6.0.4"
-  resolved "https://registry.npmjs.org/@electron-forge/maker-rpm/-/maker-rpm-6.0.4.tgz"
+"@electron-forge/maker-rpm@^6.1.1":
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/@electron-forge/maker-rpm/-/maker-rpm-6.1.1.tgz#ab532e3f5d975708f0e7d5cbe8764563b8869e75"
   dependencies:
-    "@electron-forge/maker-base" "^6.0.4"
-    "@electron-forge/shared-types" "^6.0.4"
+    "@electron-forge/maker-base" "6.1.1"
+    "@electron-forge/shared-types" "6.1.1"
   optionalDependencies:
     electron-installer-redhat "^3.2.0"
 
@@ -150,9 +158,17 @@
     fs-extra "^10.0.0"
     mime-types "^2.1.25"
 
-"@electron-forge/shared-types@6.0.5", "@electron-forge/shared-types@^6.0.4":
+"@electron-forge/shared-types@6.0.5":
   version "6.0.5"
   resolved "https://registry.yarnpkg.com/@electron-forge/shared-types/-/shared-types-6.0.5.tgz#8b265687fad188799384f88fba821f8f0eac689e"
+  dependencies:
+    "@electron/rebuild" "^3.2.10"
+    electron-packager "^17.1.1"
+    listr2 "^5.0.3"
+
+"@electron-forge/shared-types@6.1.1", "@electron-forge/shared-types@^6.0.4":
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/@electron-forge/shared-types/-/shared-types-6.1.1.tgz#f08cf783bf0a086331784b9f13110b4fade84846"
   dependencies:
     "@electron/rebuild" "^3.2.10"
     electron-packager "^17.1.1"
