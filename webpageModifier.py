@@ -14,6 +14,42 @@ def parse_webpage():
         print(f"Error reading the file: {e}")
         return None
 
+def add_new_box(soup, title, description, button_link, button_text):
+    # Create a new box
+    new_box = soup.new_tag("div", attrs={"class": "box"})
+
+    # Create the box content
+    box_content = soup.new_tag("div", attrs={"class": "box-content"})
+
+    # Create the box text
+    box_text = soup.new_tag("div", attrs={"class": "box-text"})
+    box_title = soup.new_tag("h2", attrs={"class": "box-title"})
+    box_title.string = title
+    box_description = soup.new_tag("p", attrs={"class": "box-description"})
+    box_description.string = description
+    box_text.append(box_title)
+    box_text.append(box_description)
+
+    # Create the button
+    box_button = soup.new_tag("a", href=button_link, target="_blank", rel="noopener", attrs={"class": "box-button"})
+    box_button.string = button_text
+
+    # Assemble the box content
+    box_content.append(box_text)
+    box_content.append(box_button)
+
+    # Add the box content to the new box
+    new_box.append(box_content)
+
+    # Find the main body element (the <main> tag)
+    main_content = soup.find("main")
+
+    if main_content:
+        # Append the new box as the last child of the <main> tag
+        main_content.append(new_box)
+    else:
+        print("Main content (<main> tag) not found in the HTML.")
+
 def modify_box(soup, box_selector, title, description, button_link, button_text):
     # Find the box using the provided selector
     box = soup.select_one(box_selector)
@@ -74,5 +110,5 @@ if __name__ == "__main__":
                 )
 
                 # Save the modified soup back to the local file
-                with open("modified_IndexOfGames.html", "w", encoding="utf-8") as f:
+                with open("GamesUpdated/modified_IndexOfGames.html", "w", encoding="utf-8") as f:
                     f.write(soup.prettify())

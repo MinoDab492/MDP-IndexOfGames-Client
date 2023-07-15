@@ -17,7 +17,7 @@ Game Element
 		UI Top Row
 		===============================================================================-->
 		<div class="row top-row">
-			<div class="game-title">Elematter <span>by Jack Rugile for js13kGames</span></div>
+			<div class="game-title">Elematter <span>a crappy game by Heath Garvin</span></div>
 			<a class="b b-play s5"><i>&rtrif;</i>Play</a>
 			<a class="b b-x1 s2">&times;1</a>
 			<a class="b b-x2 s2">&times;2</a>
