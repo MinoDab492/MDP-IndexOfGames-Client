@@ -2,7 +2,7 @@ import sys
 from bs4 import BeautifulSoup
 
 # Replace 'IndexOfGames.html' with the filename of your local HTML file
-file_name = 'IndexOfGames.html'
+file_name = 'GamesUpdated/IndexOfGames.html'
 
 def parse_webpage():
     try:
