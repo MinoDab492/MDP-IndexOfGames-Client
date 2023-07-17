@@ -7,7 +7,7 @@ const createWindow = () => {
     height: 1080,
   });
 
-  win.loadFile('Games/IndexOfGames.html');
+  win.loadFile('GamesUpdated/modified_IndexOfGames.html');
 };
 
 app.whenReady().then(() => {
