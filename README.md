@@ -4,7 +4,7 @@
 The Index Of Games is a project made by me, initially for some school friends. The goal was to give us some entertainment on those boring days in school. Since then it has evolved to contain multiple games, a reimplementation of DOOM, Cookie Clicker, and some others.
 
 ## Client Notice
-While currently two versions of the client have been added, it is recommended to use the Electron Client when possible. The Cordova Client is considered second priority, and may recieve updates slower to the Electron Client, additionally, it may have additional security issues, or performance issues. A pre-build binary for the Cordova Client will not be provided.
+While currently two versions of the client have been added, it is recommended to use the Electron Client when possible. The Cordova Client is considered second priority, and may recieve updates slower than the Electron Client, additionally, it may have additional security issues, or performance issues, or even may not compile. A pre-built binary for the Cordova Client will not be provided.
 
 ## How To Report Issues
 If it's a security risk, check SECURITY.md for instructions, otherwise, use the issue templates located in the .github folder.
