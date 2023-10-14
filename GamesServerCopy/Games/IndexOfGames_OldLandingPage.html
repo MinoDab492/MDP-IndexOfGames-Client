@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Be Right Back</title>
+    <html lang="en"></html>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #f2f2f2;
+        }
+
+        .main-text {
+            font-size: 3em;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .sub-text {
+            font-size: 1.2em;
+            color: #666;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-text">Be right back!</div>
+    <div class="sub-text">We're making the Index Of Games even better.</div>
+    <div class="countdown" id="countdown"></div>
+
+    <script>
+        // Set the date we're counting down to
+        const countdownDate = new Date("August 29, 2023 17:00:00").getTime();
+
+        // Update the countdown every second
+        const countdown = setInterval(function() {
+            const now = new Date().getTime();
+            const timeRemaining = countdownDate - now;
+
+            // Calculate days, hours, minutes, and seconds
+            const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+            // Display the countdown
+            const countdownElement = document.getElementById("countdown");
+            countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+            // If the countdown is over, display a message
+            if (timeRemaining < 0) {
+                clearInterval(countdown);
+                countdownElement.innerHTML = "The wait is over! Check back later to see if the sites been released!";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+/* Add styling to the disclaimer box */
+.disclaimer-box {
+    background-color: #f1f1f1; /* Background color for the box */
+    padding: 10px; /* Add some padding around the text */
+    border: 1px solid #ccc; /* Add a border around the box */
+    border-radius: 5px; /* Round the corners of the box */
+    margin: 15px auto; /* Add margin on top and bottom, center horizontally */
+    max-width: 800px; /* Set a maximum width for the box */
+}
+
+/* Add styling to the box container */
+.box {
+    background-color: #f9f9f9; /* Background color for the box */
+    padding: 15px; /* Add padding inside the box */
+    border: 1px solid #ddd; /* Add a border around the box */
+    border-radius: 5px; /* Round the corners of the box */
+    max-width: 600px; /* Set a maximum width for the box */
+    margin: 0 auto; /* Center the box horizontally */
+    display: flex; /* Use flexbox to arrange the content inside the box */
+    align-items: center; /* Center the content vertically inside the box */
+}
+
+/* Style the title and description on the left side of the box */
+.box-text {
+    flex: 1; /* Allow the text to grow and take the available space */
+}
+
+.box-title {
+    font-size: 24px;
+    margin-bottom: 10px; /* Add some spacing below the title */
+}
+
+.box-description {
+    font-size: 16px;
+    margin-bottom: 15px; /* Add some spacing below the description */
+}
+
+/* Style the button on the far right of the box */
+.box-button {
+    background-color: #007bff; /* Set the button background color */
+    color: #fff; /* Set the button text color */
+    padding: 8px 15px; /* Add some padding to the button */
+    border: none; /* Remove the button border */
+    border-radius: 5px; /* Round the corners of the button */
+    text-decoration: none; /* Remove underline from the button text */
+    margin-left: auto; /* Push the button to the far right */
+    align-self: center; /* Align the button vertically in the middle of the box */
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    text-align: center
+}
