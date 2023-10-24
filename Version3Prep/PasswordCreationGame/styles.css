@@ -1,0 +1,13 @@
+/* styles.css */
+.checkmark {
+    visibility: hidden;
+}
+
+.requirements p span.checkmark {
+    visibility: visible;
+    margin-left: 5px;
+}
+
+meter {
+    width: 100%;
+}
