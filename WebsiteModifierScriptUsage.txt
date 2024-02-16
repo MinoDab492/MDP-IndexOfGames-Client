@@ -1,6 +1,0 @@
-To modify:
-python script.py modify ".box:nth-child(2)" "Updated Title" "This is the updated description." "https://example.com/updated" "Updated Button"
-This finds the (2) box, and modifies with the new parameters.
-
-To add:
-python script.py add "New Box Title" "This is the description of the new box." "https://example.com" "Click Me"
